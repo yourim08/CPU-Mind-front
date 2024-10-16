@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/P1.css">
+    <title>CPU 검사</title>      
+</head>
+<body>
+    <div class="container">
+        <!-- 시작 화면 -->
+        <div id="startScreen" class="show">
+            <h1>CPU 검사</h1>
+            <p>시작 버튼을 눌러 질문을 시작하세요.</p>
+            <button id="startButton" class="button" onclick="startTest()">시작</button>
+        </div>
+
+        <!-- 질문 폼 -->
+        <form id="questionForm" class="hidden" onsubmit="submitForm(event)">
+            <h2>질문에 답하세요:</h2>
+
+            <!-- 질문 영역 -->
+            <div id="questionsContainer"></div>
+
+            <!-- 선택한 응답 표시 -->
+            <div id="selectedAnswer" class="selected-answer hidden"></div>
+
+            <!-- 제출 버튼 (마지막 질문에만 표시) -->
+            <button type="submit" class="button hidden" id="submitButton">제출</button>
+        </form>
+
+        <!-- 결과 화면 -->
+        <div id="resultScreen" class="hidden result">
+            <h1>검사 결과</h1>
+            <p id="resultMessage"></p>
+            <button class="button" onclick="restartTest()">다시 시작</button>
+        </div>
+    </div>
+        <script src="project(js).js"></script>
+</body>
+</html>
