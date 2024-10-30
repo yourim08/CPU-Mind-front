@@ -1,0 +1,69 @@
+body{
+    background-image:url(img/Login.png);
+}
+.LoginHome{
+    position: relative;
+}
+.LoginTab{
+    margin-left: 545px;
+    margin-top: 80px;
+}
+
+.id{  /*id 글자*/
+    height: 15px;
+    position: absolute;
+    margin-top: 250px;
+    left:580px;
+}
+.pw{  /*pw 글자*/ 
+    height: 15px;
+    position: absolute;
+    margin-top:400px;
+    left: 580px;
+}
+
+.id_input{  /*id 입력창*/
+    position: absolute;
+    left: 580px;
+    bottom: 290px;
+    width: 340px;
+    height: 25px;
+    border: none; /* 모든 테두리 제거 */
+    border-bottom: 1px solid #ccc; /* 아랫선만 남김 */
+    box-shadow: none; /* 그림자 제거 */
+    font-size: 16px; /* 텍스트 크기 */
+    outline: none; /* 포커스 시 파란 테두리 제거 */
+    transition: all 0.3s ease; /* 부드러운 애니메이션 */
+}
+.id_input:focus {
+    border-color: #4a90e2; /* 클릭 시 테두리 색상 변경 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 클릭 시 그림자 강조 */
+}
+.pw_input{  /*pw 입력창*/
+    position: absolute;
+    left: 580px;
+    bottom: 140px;
+    width: 340px;
+    height: 25px;
+    border: 1px solid #ccc; 
+    border: none; /* 모든 테두리 제거 */
+    border-bottom: 1px solid #ccc; /* 아랫선만 남김 */
+    box-shadow: none; /* 그림자 제거 */
+    font-size: 16px; /* 텍스트 크기 */
+    outline: none; /* 포커스 시 파란 테두리 제거 */
+    transition: all 0.3s ease; /* 부드러운 애니메이션 */
+}
+.pw_input:focus{
+    border-color : #4a90e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.login{
+    position:absolute;
+    left: 850px;
+    bottom: 50px;
+    width: 75px;
+    height: 40px;
+    border-radius: 7px;
+    border:none;
+    background-color: #74D7FF;
+}
